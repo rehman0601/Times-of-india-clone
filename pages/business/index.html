@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Times of India Clone</title>
+    <title>World News - Times of India</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
     <header>
+       <header>
         <div class="top-bar">
             <div class="container">
                 <div class="top-bar-content">
@@ -23,7 +24,7 @@
             </div>
         </div>
         
-        <div class="container">
+       <div class="container">
             <div class="logo-header">
                 <div>
                     <h1 class="main-logo">The Times of India</h1>
@@ -34,17 +35,17 @@
                 </div>
             </div>
         </div>
-        
+
         <nav class="main-nav" aria-label="Main Navigation">
             <div class="container">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link active ">Home</a></li>
-                    <li class="nav-item"><a href="pages/latest/index.html" class="nav-link">Latest News</a></li>
-                    <li class="nav-item"><a href="pages/india/index.html" class="nav-link">India</a></li>
-                    <li class="nav-item"><a href="pages/world/index.html" class="nav-link">World</a></li>
-                    <li class="nav-item"><a href="pages/business/index.html" class="nav-link ">Business</a></li>
-                    <li class="nav-item"><a href="pages/sports/index.html" class="nav-link">Sports</a></li>
-                    <li class="nav-item"><a href="pags/tech/index.html" class="nav-link">Technology</a></li>
+                    <li class="nav-item"><a href="../../index.html" class="nav-link ">Home</a></li>
+                    <li class="nav-item"><a href="../latest/index.html" class="nav-link">Latest News</a></li>
+                    <li class="nav-item"><a href="../india/index.html" class="nav-link">India</a></li>
+                    <li class="nav-item"><a href="../world/index.html" class="nav-link">World</a></li>
+                    <li class="nav-item"><a href="../business/index.html" class="nav-link active">Business</a></li>
+                    <li class="nav-item"><a href="../sports/index.html" class="nav-link">Sports</a></li>
+                    <li class="nav-item"><a href="../tech/index.html" class="nav-link">Technology</a></li>
                 </ul>
             </div>
         </nav>
@@ -64,44 +65,31 @@
     <main class="container">
         <div class="content-wrapper">
             <section class="main-content">
-                <article>
-                    <h2 class="section-title">Top Stories</h2>
-                    <div id="topStories"></div>
-                </article>
-                
-                <article>
-                    <h2 class="section-title">Latest News</h2>
-                    <div id="latestNews"></div>
-                </article>
-                
-                <article>
-                    <h2 class="section-title">India News</h2>
-                    <div id="indiaNews"></div>
-                </article>
+                <h1 class="section-title">World News</h1>
+                <div class="news-container">
+                    <!-- News articles will be loaded here -->
+                    <div class="loading">Loading news...</div>
+                </div>
             </section>
             
-            <aside class="sidebar" role="complementary">
+            <aside class="sidebar">
                 <div class="sidebar-card">
-                    <h3 class="sidebar-title">Trending Now</h3>
-                    <ul class="trending-list" id="trendingNews"></ul>
-                </div>
-                
-                <div class="sidebar-card">
-                    <h3 class="sidebar-title">Most Popular</h3>
-                    <ul class="trending-list" id="popularNews"></ul>
-                </div>
-                
-                <div class="sidebar-card">
-                    <h3 class="sidebar-title">TOI ePaper</h3>
-                    <p style="font-size: 14px; margin-bottom: 15px;">Read the digital replica of the newspaper</p>
-                    <button class="read-now">Read Now</button>
+                    <h3 class="sidebar-title">Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="../latest/index.html">Latest News</a></li>
+                        <li><a href="../india/index.html">India</a></li>
+                        <li><a href="../world/index.html">World</a></li>
+                        <li><a href="../business/index.html class="active"">Business</a></li>
+                        <li><a href="../sports/index.html">Sports</a></li>
+                        <li><a href="../tech/index.html">Technology</a></li>
+                    </ul>
                 </div>
             </aside>
         </div>
     </main>
     
     <footer class="footer">
-        <div class="container">
+         <div class="container">
             <div class="footer-links">
                 <div class="footer-column">
                     <h3>THE TIMES OF INDIA</h3>
@@ -145,8 +133,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="assets/js/auth/auth.js"></script>
-    <script type="module" src="assets/js/main.js"></script>
+    
+    <script src="../../assets/js/auth/auth.js"></script>
+    <script type="module" src="../../assets/js/category.js"></script>
 </body>
 </html>
