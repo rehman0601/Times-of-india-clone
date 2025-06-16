@@ -1,4 +1,4 @@
-/* Base Styles */
+/* Reset Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +6,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Base Element Styles */
 body {
   background-color: #f5f5f5;
   color: #333;
@@ -26,21 +27,22 @@ img {
   height: auto;
 }
 
-header {
-    border-bottom: 1px solid #e0e0e0;
-}
-
-/* Header Styles */
-.top-bar {
-  background-color: #f8f8f8;
-  padding: 5px 0;
-  font-size: 12px;
-}
-
+/* Layout Container */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.top-bar {
+  background-color: #f8f8f8;
+  padding: 5px 0;
+  font-size: 12px;
 }
 
 .top-bar-content {
@@ -49,15 +51,7 @@ header {
   align-items: center;
 }
 
-.date-time {
-  color: #666;
-}
-
-.social-icons a {
-  margin-left: 10px;
-  color: #666;
-}
-
+/* Logo Section */
 .logo-header {
   display: flex;
   justify-content: space-between;
@@ -73,12 +67,7 @@ header {
   text-transform: uppercase;
 }
 
-.logo-subtext {
-  font-size: 12px;
-  color: #666;
-}
-
-/* Navigation */
+/* Navigation Styles */
 .main-nav {
   display: flex;
   justify-content: center;
@@ -105,22 +94,7 @@ header {
   color: #e3120b;
 }
 
-.nav-link.active {
-    color: #e3120b;
-    position: relative;
-}
-
-.nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #e3120b;
-}
-
-/* Main Content */
+/* Content Layout */
 .content-wrapper {
   display: flex;
   margin: 20px 0;
@@ -133,6 +107,32 @@ header {
 
 .sidebar {
   width: 30%;
+}
+
+/* News Card Styles */
+.news-card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0 20px;
 }
 
 /* News Cards */
@@ -462,7 +462,7 @@ header {
     background: #c51009;
 }
 
-/* Enhanced Auth Modal Styles */
+/*  Auth Modal Styles */
 .auth-modal {
     position: fixed;
     top: 0;
@@ -587,7 +587,7 @@ header {
     transform: translateY(-1px);
 }
 
-/* Subscription Modal Enhancements */
+/* Subscription Modal  */
 .plan {
     background: #fff;
     border: 2px solid #eee;

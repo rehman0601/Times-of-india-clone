@@ -5,7 +5,7 @@ const BASE_URL = "https://saurav.tech/NewsAPI/";
 class CategoryNews {
     constructor() {
         this.newsService = new NewsService();
-        // Fix category extraction from URL
+        // category extraction from URL
         const pathParts = window.location.pathname.split('/');
         this.category = pathParts[pathParts.indexOf('pages') + 1] || 'general';
         this.container = document.querySelector('.news-container');
@@ -28,7 +28,6 @@ class CategoryNews {
         };
 
         this.initializeAuth();
-        this.setupEventListeners();
         this.initializeAds();
         this.init();
     }
@@ -38,7 +37,7 @@ class CategoryNews {
         document.title = `${title} News - Times of India`;
         document.querySelector('.section-title').textContent = `${title} News`;
 
-        // Update active states
+        // active states
         const navLink = document.querySelector(`.nav-link[href*="${this.category}"]`);
         const categoryLink = document.querySelector(`.category-list a[href*="${this.category}"]`);
         
@@ -250,9 +249,6 @@ class CategoryNews {
         }
     }
 
-    setupEventListeners() {
-        // Remove subscription related code
-    }
 }
 
 // Global handlers for modal actions
